@@ -133,7 +133,7 @@ $(document).ready(function(){
 				})
 
 
-		// 4. Fetching various sections of a page
+		// 4. Fetching various sections of a page by Obinna
 
 				//Fetching nav
 			// Create a target element where you want to insert the content
