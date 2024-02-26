@@ -172,7 +172,7 @@ $(document).ready(function(){
  			 })
  			 .catch(error => {
     		console.error("Error fetching content:", error);
-    		// Handle errors gracefully, e.g., display an error message
+    		// display an error message
  			 });
 
 	// 5. countdown timer by Obinna
