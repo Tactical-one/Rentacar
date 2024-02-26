@@ -174,12 +174,8 @@ $(document).ready(function(){
     		console.error("Error fetching content:", error);
     		// Handle errors gracefully, e.g., display an error message
  			 });
-		
-			// Trigger fetch on page load
-			window.addEventListener("DOMContentLoaded", fetchContent);
-			});
 
-			// 5. countdown timer by Obinna
+	// 5. countdown timer by Obinna
 
 			// Set the date we're counting down to
 		var countDownDate = new Date("Nov 5, 2024 15:37:25").getTime();
@@ -209,3 +205,9 @@ $(document).ready(function(){
    		document.getElementById("countdown").innerHTML = "EXPIRED";
  		 }
 	}, 1000);
+		
+			// Trigger fetch on page load
+			window.addEventListener("DOMContentLoaded", fetchContent);
+			});
+
+			
