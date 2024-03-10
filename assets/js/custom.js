@@ -1,15 +1,5 @@
 $(document).ready(function(){
 	"use strict";
-    
-        /*==================================
-* Author        : "ThemeSine"
-* Template Name : CarVilla HTML Template
-* Version       : 1.1
-* Modifed by    : Obinna 
-==================================== */
-
-
-
 
 /*=========== TABLE OF CONTENTS ===========
 1. Scroll To Top
@@ -205,7 +195,7 @@ $(document).ready(function(){
    		document.getElementById("countdown").innerHTML = "EXPIRED";
  		 }
 	}, 1000);
-		
+
 			// Trigger fetch on page load
 			window.addEventListener("DOMContentLoaded", fetchContent);
 			});
