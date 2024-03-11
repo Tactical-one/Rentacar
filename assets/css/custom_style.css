@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+/* Coming soon page */
+
 .container2 {
   display: flex;
   row-gap: 15px;
