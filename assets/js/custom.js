@@ -6,6 +6,9 @@ $(document).ready(function(){
 2. welcome animation support
 3. owl carousel
 4. Fetching various sections of a page
+5. countdown timer
+6. coming soon page JS
+
 ======================================*/
 
     // 1. Scroll To Top 
