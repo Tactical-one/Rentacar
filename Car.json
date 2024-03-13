@@ -1,0 +1,84 @@
+{
+  "cars": [
+    {
+      "image": "#",
+      "model": "BMW 6-Series Gran Coupe",
+      "year": 2017,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Automatic",
+      "price": "$89,395",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non."
+    },
+    {
+      "image": "#",
+      "model": "Chevrolet Camaro WMV20",
+      "year": 2017,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Automatic",
+      "price": "$66,575",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non."
+    },
+    {
+      "image": "#",
+      "model": "Lamborghini V520",
+      "year": 2017,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Automatic",
+      "price": "$125,250",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non."
+    },
+    {
+      "image": "#",
+      "model": "Toyota A3 Truck",
+      "year": 2017,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Automatic",
+      "price": "$95,500",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non."
+    },
+    {
+      "image": "#",
+      "model": "Toyota Tundra PICK UP TRUCK",
+      "year": 2021,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Automatic",
+      "price": "$36,850",
+      "description": "Rugged on the outside. Premium on the inside. The 2024 Tundra full-size truck is designed to haul, tow, and tackle roads less traveled, all while surrounding you with creature comforts and advanced technologies that make your drive easier and more enjoyable."
+    },
+    {
+      "image": "#",
+      "model": "Tesla Model S 718 Cayman",
+      "year": 2017,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Automatic",
+      "price": "$48,500",
+      "description": "Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation."
+    },
+    {
+      "image": "#",
+      "model": "BMW 8-Series Coupe",
+      "year": 2017,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Electric",
+      "price": "$56,000",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non."
+    },
+    {
+      "image": "#",
+      "model": "BMW Xseries-6",
+      "year": 2017,
+      "mileage": "3100 Mi",
+      "horsepower": "240HP",
+      "transmission": "Automatic",
+      "price": "$75,800",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non."
+    }
+  ]
+}

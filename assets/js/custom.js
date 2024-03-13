@@ -233,7 +233,44 @@ const timeFunction = setInterval(() => {
   days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
 }, 1000); //1000ms = 1s
 
-			
+
+// 7. catalog page content generation from JSON file by Obinna
+
+// Fetch the JSON data from the "Car.json" file and render the cars
+fetch('Car.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('featured-cars-row');
+    data.cars.forEach(car => {
+      container.innerHTML += `
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="single-featured-cars">
+            <div class="featured-img-box">
+              <div class="featured-cars-img">
+                <img src="${car.image}" alt="cars">
+              </div>
+              <div class="featured-model-info">
+                <p>
+                  model: ${car.year}
+                  <span class="featured-mi-span"> ${car.mileage}</span> 
+                  <span class="featured-hp-span"> ${car.horsepower}</span>
+                  ${car.transmission}
+                </p>
+              </div>
+            </div>
+            <div class="featured-cars-txt">
+              <h2><a href="#">${car.model}</a></h2>
+              <h3>${car.price}</h3>
+              <p>
+                ${car.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  })
+  .catch(error => console.error('Error loading car data:', error));
 
 			// Trigger fetch on page load
 			window.addEventListener("DOMContentLoaded", fetchContent);
