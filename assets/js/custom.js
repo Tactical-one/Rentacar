@@ -1,25 +1,20 @@
-// Wait for the document to be ready before executing any code
 $(function(){
-    "use strict"; // Enable strict mode to catch common coding errors
+    "use strict";
 
-    // Scroll To Top functionality
+    // Scroll To Top 
     $(window).scroll(function() {
-        // Show or hide the 'return-to-top' button based on scroll position
         $('.return-to-top').toggle($(this).scrollTop() > 300);
     });
 
-    // Smooth scroll to top when the 'return-to-top' button is clicked
     $('.return-to-top').click(function(){
         $('html, body').animate({scrollTop: 0}, 1500);
         return false;
     });
 
     // Welcome Animation Support
-    // Apply fadeInUp animation to certain elements on page load
     $('.welcome-hero-txt h2, .welcome-hero-txt p, .welcome-hero-txt button').css({'opacity':'0'}).addClass('animated fadeInUp');
 
-    // Owl Carousel Initialization
-    // Carousel for new cars with fade transition
+    // Owl Carousel
     $("#new-cars-carousel").owlCarousel({
         items: 1,
         autoplay:true,
@@ -33,7 +28,6 @@ $(function(){
         animateOut: 'fadeOutLeft'
     });
 
-    // Testimonial Carousel
     var testimonialCarousel = $('.testimonial-carousel');
     testimonialCarousel.owlCarousel({
         items:3,
@@ -50,7 +44,6 @@ $(function(){
         }
     });
 
-    // Brand Carousel
     $('.brand-item').owlCarousel({
         items:6,
         loop:true,
@@ -66,7 +59,6 @@ $(function(){
         }
     });
 
-    // Control autoplay for testimonial carousel
     $('.play').click(function(){
         testimonialCarousel.trigger('play.owl.autoplay',[1000])
     });
@@ -76,7 +68,6 @@ $(function(){
     });
 
     // Fetching various sections of a page
-    // Fetch and inject HTML content for navigation and footer sections
     function fetchContent(url, targetElement) {
         fetch(url)
             .then(response => {
@@ -93,10 +84,7 @@ $(function(){
             });
     }
 
-    // Fetch navigation HTML and inject it into the specified element
     fetchContent("nav.html", document.getElementById("nav-area"));
-
-    // Fetch footer HTML and inject it into the specified element
     fetchContent("footer.html", document.getElementById("footer-area"));
 
     // Countdown Timer
@@ -117,10 +105,10 @@ $(function(){
 
     // Coming Soon Page JS
     const elements = {
-        seconds: document.querySelector(".seconds .number"),
-        minutes: document.querySelector(".minutes .number"),
-        hours: document.querySelector(".hours .number"),
-        days: document.querySelector(".days .number")
+        seconds: document.querySelector("seconds.number"),
+        minutes: document.querySelector("minutes.number"),
+        hours: document.querySelector("hours.number"),
+        days: document.querySelector("days.number")
     };
 
     let timeValues = { sec: 11, min: 2, hour: 2, day: 9 };
@@ -177,28 +165,23 @@ $(function(){
         })
         .catch(error => console.error('Error loading car data:', error));
 });
-// Wait for the document to be ready before executing any code
 $(function(){
-    "use strict"; // Enable strict mode to catch common coding errors
+    "use strict";
 
-    // Scroll To Top functionality
+    // Scroll To Top 
     $(window).scroll(function() {
-        // Show or hide the 'return-to-top' button based on scroll position
         $('.return-to-top').toggle($(this).scrollTop() > 300);
     });
 
-    // Smooth scroll to top when the 'return-to-top' button is clicked
     $('.return-to-top').click(function(){
         $('html, body').animate({scrollTop: 0}, 1500);
         return false;
     });
 
     // Welcome Animation Support
-    // Apply fadeInUp animation to certain elements on page load
     $('.welcome-hero-txt h2, .welcome-hero-txt p, .welcome-hero-txt button').css({'opacity':'0'}).addClass('animated fadeInUp');
 
-    // Owl Carousel Initialization
-    // Carousel for new cars with fade transition
+    // Owl Carousel
     $("#new-cars-carousel").owlCarousel({
         items: 1,
         autoplay:true,
@@ -212,7 +195,6 @@ $(function(){
         animateOut: 'fadeOutLeft'
     });
 
-    // Testimonial Carousel
     var testimonialCarousel = $('.testimonial-carousel');
     testimonialCarousel.owlCarousel({
         items:3,
@@ -229,7 +211,6 @@ $(function(){
         }
     });
 
-    // Brand Carousel
     $('.brand-item').owlCarousel({
         items:6,
         loop:true,
@@ -245,7 +226,6 @@ $(function(){
         }
     });
 
-    // Control autoplay for testimonial carousel
     $('.play').click(function(){
         testimonialCarousel.trigger('play.owl.autoplay',[1000])
     });
@@ -255,7 +235,6 @@ $(function(){
     });
 
     // Fetching various sections of a page
-    // Fetch and inject HTML content for navigation and footer sections
     function fetchContent(url, targetElement) {
         fetch(url)
             .then(response => {
@@ -272,10 +251,7 @@ $(function(){
             });
     }
 
-    // Fetch navigation HTML and inject it into the specified element
     fetchContent("nav.html", document.getElementById("nav-area"));
-
-    // Fetch footer HTML and inject it into the specified element
     fetchContent("footer.html", document.getElementById("footer-area"));
 
     // Countdown Timer
