@@ -197,17 +197,17 @@ var ulElement = document.querySelector('#navigationBar');
 // Selecting all <li> elements under the <ul>
 	var liElements = document.querySelectorAll('li');
 	
-// Loop through each <li> element and add the "o'clock" function
+// Loop through each <li> element and add the class manipulation function
 liElements.forEach(function(li) {
 	li.addEventListener('click', function() {
 // Remove any existing "active" class from other <li> elements
 liElements.forEach(function(item) {
 	if (item.classList.contains(active)){
-	item.className = ('scroll');
+	iitem.classList.remove('active');
 }
 });
 // Add "active" class to the clicked <li> element
-li.className = ('scroll active');
+li.classList.add('active');
 	});
 });
 
