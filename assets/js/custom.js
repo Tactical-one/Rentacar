@@ -234,7 +234,22 @@ $(function(){
         testimonialCarousel.trigger('stop.owl.autoplay')
     });
 
-    
+    // Fetching various sections of a page
+    function fetchContent(url, targetElement) {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("HTTP error!");
+                }
+                return response.text();
+            })
+            .then(textData => {
+                targetElement.innerHTML = textData;
+            })
+            .catch(error => {
+                console.error("Error fetching content:", error);
+            });
+    }
 
     fetchContent("nav.html", document.getElementById("nav-area"));
     fetchContent("footer.html", document.getElementById("footer-area"));
