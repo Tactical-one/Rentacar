@@ -8,6 +8,7 @@ $(document).ready(function(){
 4. Fetching various sections of a page
 5. countdown timer
 6. coming soon page JS
+7. catalog page content generation from JSON file
 
 ======================================*/
 
