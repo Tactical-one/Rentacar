@@ -332,3 +332,21 @@ $(function(){
         })
         .catch(error => console.error('Error loading car data:', error));
 });
+
+// Selecting the <ul> element
+var ulElement = document.querySelector('#navigationBar');
+			
+// Selecting all <li> elements under the <ul>
+	var liElements = ulElement.querySelectorAll('li');
+	
+// Loop through each <li> element and add the "o'clock" function
+liElements.forEach(function(li) {
+	li.addEventListener('click', function() {
+// Remove any existing "active" class from other <li> elements
+liElements.forEach(function(item) {
+	item.classList.remove('active');
+});
+// Add "active" class to the clicked <li> element
+li.classList.add('active');
+	});
+});
