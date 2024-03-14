@@ -337,7 +337,7 @@ $(function(){
 var ulElement = document.querySelector('#navigationBar');
 			
 // Selecting all <li> elements under the <ul>
-	var liElements = ulElement.querySelectorAll('li');
+	var liElements = document.querySelectorAll('li');
 	
 // Loop through each <li> element and add the "o'clock" function
 liElements.forEach(function(li) {
@@ -345,10 +345,10 @@ liElements.forEach(function(li) {
 // Remove any existing "active" class from other <li> elements
 liElements.forEach(function(item) {
 	if (item.classList.contains(active)){
-	item.classList.remove('active');
+	item.className = ('scroll');
 }
 });
 // Add "active" class to the clicked <li> element
-li.classList.add('active');
+li.className = ('scroll active');
 	});
 });
