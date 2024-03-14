@@ -344,7 +344,9 @@ liElements.forEach(function(li) {
 	li.addEventListener('click', function() {
 // Remove any existing "active" class from other <li> elements
 liElements.forEach(function(item) {
+	if (item.classList.contains(active)){
 	item.classList.remove('active');
+}
 });
 // Add "active" class to the clicked <li> element
 li.classList.add('active');
